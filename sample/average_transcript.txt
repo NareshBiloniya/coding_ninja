@@ -1,0 +1,14 @@
+Interviewer (Agent): Hi — I'm the ExcelMockInterviewer. This interview runs ~10–15 minutes. Please give a one-line intro (education + role).
+Candidate: I have a BCom and work as a junior analyst at XYZ.
+Agent: Role?
+Candidate: Above Associate.
+Agent: Q1: How would you sum values in B2:B100 where Column A equals 'Sales'?
+Candidate: =SUMIF(A2:A100,"Sales",B2:B100)
+Agent (follow-up): Good. Any edge-cases you'd consider (e.g., spaces, data types)?
+Candidate: If there are leading/trailing spaces, I'd use TRIM or clean data; also consider blanks and text values.
+Agent: Q2: Write a formula to extract 'Mar-2025' from a date in A2.
+Candidate: =TEXT(A2,"mmm-yyyy")
+Agent: Q3: Find missing customers between two sheets with inconsistent leading zeros — approach?
+Candidate: Normalize IDs with TEXT or VALUE; use VLOOKUP or Power Query merge.
+Agent: End of interview — evaluating now...
+Evaluator: Formula Accuracy: 7/10, Logical Thinking: 7/10, Learning Willingness: 8/10, Complex Scenario: 6.5/10, Communication: 7/10. Combined: 7.1/10 — Pass.
